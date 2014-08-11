@@ -35,6 +35,13 @@ module.exports = function(o){
 			console.log('Error: this does not work');
 		}
 	};
+	actionBarHelper.prototype.setSubtitle=function(subtitle){
+		if (this.works){
+			this.actionBar.setSubtitle(subtitle);
+		}else{
+			console.log('Error: this does not work');
+		}
+	};
 	actionBarHelper.prototype.setUpAction=function(action){
 		if (this.works && 'function' === typeof action){
 			this.actionBar.displayHomeAsUp=true;	
